@@ -66,6 +66,8 @@ def create_color_histogram(image):
         ax.plot(bins[:-1], hist, color=color)
     ax.set_xlim([0, 256])
     ax.set_title('Color Histogram (RGB)')
+    ax.set_xlabel('Pixel Intensity')
+    ax.set_ylabel('Number of Pixels')
 
     # Сохраняем гистограмму в буфер
     buf = BytesIO()
